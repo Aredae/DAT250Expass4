@@ -11,16 +11,18 @@ public class TCPPutRequest {
 
 	private static int port = 8080;
 	private static String host = "localhost";
-	private static String uri = "/counters";
+	private static String uri = "/todo";
 
 	public static void main(String[] args) {
 
-		Counters counters = new Counters(3, 5);
+		Todo todo = new Todo();
+		todo.setDescription("This is a description");
+		todo.setSummary("This is a summary");
 
 		try (Socket s = new Socket(host, port)) {
 
 			// construct the HTTP request
-			String jsonbody = counters.toJson();
+			String jsonbody = todo.toJson();
 
 			String httpputrequest = 
 					"PUT " + uri + " HTTP/1.1\r\n" + 

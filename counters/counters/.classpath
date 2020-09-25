@@ -19,5 +19,7 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Program Files/eclipselink/jlib/jpa/jakarta.persistence_2.2.3.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/eclipselink/jlib/eclipselink.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
